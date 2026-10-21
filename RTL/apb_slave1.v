@@ -2,19 +2,20 @@
 
 
 
-module apb_slave #(parameter WAIT_CYCLES = 2)(             //For wait transfer, Pready ne wait karva mate
+module apb_slave #(parameter WAIT_CYCLES = 2)(             //For wait transfer, Pready ne wait karva mate for 2 cycle 
     input             PCLK, PRESETn,
     input             PSEL,PENABLE, PWRITE,     // APB control signals
 
-    // APB address and write data
+// APB address and write data
     input      [7:0]  PADDR,
     input      [31:0] PWDATA,
 
-   input             WAIT_ENABLE,               // Project-specific wait control
+    input             WAIT_ENABLE,               // Project-specific wait control
 
     // APB response signals
     output reg [31:0] PRDATA,
-    output wire       PREADY
+    output wire       PREADY.
+    output wire       PSLVEER
 );
 
 
