@@ -2,7 +2,7 @@
 
 
 
-module apb_slave #(parameter WAIT_CYCLES = 2)(             //For wait transfer, Pready ne wait karva mate for 2 cycle 
+module apb_slave_1 #(parameter WAIT_CYCLES = 2)(             //For wait transfer, Pready ne wait karva mate for 2 cycle 
     input             PCLK, PRESETn,
     input             PSEL,PENABLE, PWRITE,     // APB control signals
 

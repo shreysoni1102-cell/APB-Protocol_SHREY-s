@@ -1,10 +1,58 @@
 m255
 K4
 z2
-!s12c _opt1
-Z0 !s99 nomlopt
-!s12c _opt
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
 R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s12c _opt
+R1
 !s11f vlog 2023.4 2023.10, Oct  9 2023
 13
 !s112 1.1
@@ -12,72 +60,72 @@ R0
 !i10e 25
 !i10f 100
 cModel Technology
-Z1 d/home/shrey.s/DV_Training/PROTOCOL's/APB-Protocol/SIM
+Z2 d/home/shrey.s/DV_Training/PROTOCOL's/APB-Protocol/SIM
 T_opt
 !s110 1792586924
 V[82`W@243eh3T]3kAb4gR1
-Z2 04 12 4 work apb_slave_tb fast 0
+Z3 04 12 4 work apb_slave_tb fast 0
 =1-bc305bf5d1c5-6ad8b4ac-512ed-8806
-R0
-Z3 !s12f OEM100
-Z4 !s12b OEM100
-Z5 !s124 OEM100
-o-quiet -auto_acc_if_foreign -work work
-Z6 tCvgOpt 0
-n@_opt
-Z7 OL;O;2023.4;77
 R1
-T_opt1
-!s110 1792587516
-VQOj]8^5UJKDk5KiH5bX;a2
+Z4 !s12f OEM100
+Z5 !s12b OEM100
+Z6 !s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+Z7 tCvgOpt 0
+n@_opt
+Z8 OL;O;2023.4;77
 R2
-=1-bc305bf5d1c5-6ad8b6fc-99d8-91bf
-R0
+T_opt1
+!s110 1792670986
+V<>AZ>fRgXFflCKP_=A4RR3
 R3
+=1-bc305bf5d1c5-6ad9fd09-e5990-5b50
+R1
 R4
 R5
-o-quiet -auto_acc_if_foreign -work work +acc
 R6
-n@_opt1
+o-quiet -auto_acc_if_foreign -work work +acc
 R7
-R1
+n@_opt1
+R8
+R2
 vapb_slave
-2../RTL/apb_slave.v
-!s110 1792644598
+Z9 2../RTL/apb_slave.v|../TB/apb_slave_tb.v
+Z10 !s110 1792671713
 !i10b 1
-!s100 3olb?Vde1z7]7GQKPhnVI1
-ISdjIYJR:IRNgh0kK=U]DA1
-Z8 d/home/shrey.s/DV_Training/PROTOCOL's/APB-Protocol_SHREY-s/SIM
-w1792577577
+!s100 mQM<11jCXjR;Cae?<MRn62
+I;_S^7]glH]88:RH]@hXDj3
+Z11 d/home/shrey.s/DV_Training/PROTOCOL's/APB-Protocol_SHREY-s/SIM
+w1792671521
 8../RTL/apb_slave.v
 F../RTL/apb_slave.v
-!i122 13
-L0 1 74
-Z9 VDg1SIo80bB@j0V0VzS_@n1
-Z10 OL;L;2023.4;77
+!i122 54
+L0 1 134
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+Z13 OL;L;2023.4;77
 r1
 !s85 0
 31
-!s108 1792644598.000000
-!s107 ../RTL/apb_slave.v|
-!s90 ../RTL/apb_slave.v|
+Z14 !s108 1792671713.000000
+!s107 ../TB/apb_slave_tb.v|../RTL/apb_slave.v|
+Z15 !s90 ../RTL/apb_slave.v|../TB/apb_slave_tb.v|
 !i113 0
-Z11 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R6
+Z16 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R7
 vapb_slave_1
 2../RTL/apb_slave1.v
 !s110 1792586052
 !i10b 1
 !s100 9l6>k6;zim]jaK5l53]Kg2
 IdZ00;>JA2K]Hzb[5[GXTP3
-R8
+R11
 w1792585711
 8../RTL/apb_slave1.v
 F../RTL/apb_slave1.v
 !i122 7
 L0 5 91
-R9
-R10
+R12
+R13
 r1
 !s85 0
 31
@@ -85,28 +133,28 @@ r1
 !s107 ../RTL/apb_slave1.v|
 !s90 ../RTL/apb_slave1.v|
 !i113 0
-R11
-R6
+R16
+R7
 vapb_slave_tb
-2../RTL/apb_slave.v|../TB/apb_slave_tb.v
-!s110 1792587477
-!i10b 1
-!s100 419]U>B?6ZG7[lLKUa>CP0
-I^c81_fb85m]N]JD7V^51z1
-R8
-w1792587106
-8../TB/apb_slave_tb.v
-F../TB/apb_slave_tb.v
-!i122 12
-L0 1 120
 R9
 R10
+!i10b 1
+!s100 0Bg`_B1g5BC2]F;o^izgS0
+IAKPJC1RJMAZH6mLZ1ide43
+R11
+w1792671709
+8../TB/apb_slave_tb.v
+F../TB/apb_slave_tb.v
+!i122 54
+L0 1 198
+R12
+R13
 r1
 !s85 0
 31
-!s108 1792587477.000000
-!s107 ../TB/apb_slave_tb.v|../RTL/apb_slave.v|
-!s90 ../RTL/apb_slave.v|../TB/apb_slave_tb.v|
+R14
+Z17 !s107 ../TB/apb_slave_tb.v|../RTL/apb_slave.v|
+R15
 !i113 0
-R11
-R6
+R16
+R7
