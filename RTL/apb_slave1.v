@@ -14,7 +14,7 @@ module apb_slave #(parameter WAIT_CYCLES = 2)(             //For wait transfer, 
 
     // APB response signals
     output reg [31:0] PRDATA,
-    output wire       PREADY.
+    output wire       PREADY,
     output wire       PSLVEER
 );
 
@@ -35,6 +35,8 @@ module apb_slave #(parameter WAIT_CYCLES = 2)(             //For wait transfer, 
 
     assign address_valid = reg0_sel || reg1_sel;
 
+    assign PSLVEER = PRESETn && PSEL && PENABLE && PREADY && ! address_valid;
+ 
     // Ready immediately when waiting is disabled.
     // Otherwise, ready after WAIT_CYCLES wait cycles.
     assign PREADY = (!WAIT_ENABLE) || (wait_count >= WAIT_CYCLES);
