@@ -1,5 +1,5 @@
 
-# APB Protocol ? Verilog Design and Verification
+# APB Protocol using Verilog Design and Verification
 
 A hands-on project focused on understanding and verifying the **AMBA Advanced Peripheral Bus (APB)** protocol using Verilog HDL and QuestaSim.
 
