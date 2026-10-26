@@ -1,0 +1,15 @@
+
+# Ignore Vim swap files in every folder
+*.swp
+*.swo
+
+# Ignore QuestaSim compiled library and generated files
+work/
+*.wlf
+*.ucdb
+transcript
+covhtmlreport/
+
+# Ignore common temporary editor files
+*~
+
